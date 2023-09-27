@@ -3,9 +3,7 @@ using LINQDemo.Data;
 
 var db = new DataSource();
 
-
 //Dictionary<string, Action> doSomething = new Dictionary<string, Action>();
-
 
 ////Lambda uttryck
 //var hello = () =>
@@ -40,7 +38,6 @@ var db = new DataSource();
 //string input = Console.ReadLine();
 
 //doSomething[input]();
-
 
 //string Hello()
 //{
@@ -96,7 +93,6 @@ Console.WriteLine("--------------");
 var namesQ = 
     from person in db.People
     select person.Name;
-
 
 foreach (var nameQ in namesQ)
 {
